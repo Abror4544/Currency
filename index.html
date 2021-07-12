@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Practice</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <div class="formWrapper">
+    <form id="form" action="" method="POST">
+      <h3 class="formTitle">Заполните форму</h3>
+      <p class="successMsg">Проверьте введенную почту</p>
+      <input value="" id="target" class="input target" type="number" placeholder="Сумма, руб*" name="target">
+      <select value="Валюта для конвертации" name="currencies" id="currency">
+        <option disabled selected="selected">Валюта для конвертации</option>
+      </select>
+      <input value="" id="response" readonly="" class="input" type="text" placeholder="Сумма в валюте" name="response">
+      <input class="input required" type="mail" placeholder="E-mail" name="mail">
+      <div class="formBtn">
+        <input class="send" type="submit" value="Записаться на обмен валюты">
+      </div>
+    </form>
+  </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/ajax.js"></script>
+</body>
+
+</html>
