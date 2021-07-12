@@ -12,12 +12,14 @@ $(function () {
       currency.append('<option value="' + key + '">' + key + "</option>");
     }
     $(currency).change(function () {
-      let nominal = item.Valute[this.value].Nominal
+      let nominal = item.Valute[this.value].Nominal;
       if ($(target).val() !== "") {
-        responseValue = targetValue * nominal / item.Valute[this.value].Value;
+        responseValue = (targetValue * nominal) / item.Valute[this.value].Value;
         $(response).val(Math.floor(responseValue * 100) / 100);
       }
-      console.log(responseValue);
+    });
+    $(target).change(function () {
+      $(response).val("");
     });
   });
 });
