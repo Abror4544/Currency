@@ -28,6 +28,10 @@
   padding: 70px 89px 70px 91px;
   width: 550px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -43,12 +47,6 @@
   text-transform: uppercase;
 }
 
-.formWrapper form .inputs .input,
-option {
-  width: 48%;
-  font-size: 14px;
-  line-height: 28px;
-}
 
 .formWrapper form .successMsg {
   font-style: normal;
@@ -118,6 +116,10 @@ select {
   color: grey;
 }
 
+select{
+  padding-left: 15px;;
+}
+
 form .input.error {
   border: 2px solid #f85f73 !important;
 }
@@ -167,45 +169,11 @@ form .input.error::placeholder {
   background: #3e4a7099;
 }
 
-@media screen and (max-width: 2000px) {
-  .formWrapper form {
-    overflow: auto;
-  }
-
-  .formWrapper form .formClose {
-    top: 30px;
-    right: 15px;
-  }
-
-  .formWrapper form .formTitle {
-    margin-bottom: 20px;
-  }
-
-  .formWrapper form .successMsg {
-    margin-bottom: 50px;
-  }
-
-  .formWrapper form .input {
-    padding: 20px 15px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .formWrapper form {
     width: 100%;
     padding: 70px 16px 70px 14px;
-  }
-
-  .formWrapper form .inputs .input {
-    width: 100%;
-  }
-
-  .formWrapper form .inputs {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
   }
 }
 
